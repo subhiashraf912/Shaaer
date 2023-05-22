@@ -1,8 +1,8 @@
 const reviews = [
   {
     image: "assets/images/feedbacks/feedback_1.png",
-    name: "احمد بطاويل",
-    country: "اصله ده بيت اومك",
+    name: "خالد علي",
+    country: "فلسطين",
 
     text: `هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
            لقد تم توليد هذا النص من منصة قالب جاهز ، حيث يمكنك
