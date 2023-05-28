@@ -38,6 +38,19 @@ let nationalities = [
   { title: "المغربية", value: "MO" },
   { title: "الأوروبية", value: "EU" },
 ];
+// a function to translate the offer type
+function translateOfferType(type) {
+  switch (type) {
+    case "lux":
+      return "فاخر";
+    case "mid":
+      return "متوسط";
+    case "normal":
+      return "اقتصادي";
+    default:
+      return "غير محدد";
+  }
+}
 
 // Define a function to generate a random offer
 const generateRandomOffer = () => {
@@ -89,6 +102,7 @@ function generateOfferMarkup(offer) {
       <h3>${offer.title}</h3>
       <p>السعر: ${offer.price}$</p>
       <p>الجالية: ${offer.nationality.title}</p>
+      <p>الفئة: ${translateOfferType(offer.type)}</p>
       <div class="dash-separator"></div>
       <div class="offer-features">
         ${offer.features
