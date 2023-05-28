@@ -396,6 +396,10 @@ section.offers h2 {
   margin-bottom: 50px;
 }
 
+.offers-wrapper {
+  padding-top: 30px;
+}
+
 section.offers .offer-item {
   border-radius: 16px;
   padding: 8px;
