@@ -72,7 +72,7 @@ function generateRandomOffers(numOfOffers) {
   return randomOffers;
 }
 // Define the number of random offers you want to generate
-let numOfOffers = 15; // default number of offers
+let numOfOffers = 100; // default number of offers
 
 // Generate an array of random offers
 let randomOffers = generateRandomOffers(numOfOffers);
@@ -83,7 +83,9 @@ function generateOfferMarkup(offer) {
   return `
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="offer-item bg-white">
-      <img src="${offer.image}" />
+      <div class="offer-image-wrapper">
+        <img src="${offer.image}" class="offer-image" />
+      </div>
       <h3>${offer.title}</h3>
       <p>السعر: ${offer.price}$</p>
       <p>الجالية: ${offer.nationality.title}</p>
@@ -203,3 +205,46 @@ document
     // Display the filtered offers
     displayFilteredOffers(filteredOffers);
   });
+
+// Smooth scroll to target section
+document.addEventListener("DOMContentLoaded", function () {
+  // scroll to offers section on button click
+  const button = document.querySelector(".btn-accent");
+  const targetSection = document.querySelector("#offers-section");
+
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    const offset = targetSection.offsetTop;
+    window.scroll({
+      top: offset,
+      behavior: "smooth",
+    });
+  });
+
+  // scroll to top button
+
+  const scrollToTopButton = document.getElementById("scrollToTopButton");
+  const offersSection = document.getElementById("offers-section");
+
+  function toggleScrollToTopButton() {
+    const scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+    const offersSectionTop = offersSection.offsetTop;
+
+    if (scrollPosition > offersSectionTop) {
+      scrollToTopButton.classList.add("active");
+    } else {
+      scrollToTopButton.classList.remove("active");
+    }
+  }
+
+  function scrollToTop() {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  window.addEventListener("scroll", toggleScrollToTopButton);
+  scrollToTopButton.addEventListener("click", scrollToTop);
+});

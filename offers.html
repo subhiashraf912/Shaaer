@@ -57,27 +57,28 @@
       <!-- end website header -->
       <!-- 2: start main section -->
       <main>
-        <!-- 2.1: start hero section -->
+        <!-- Start hero section -->
         <div class="row">
           <section class="col-xs-12 hero">
             <h1 class="title">
-              شعــائر تجعل رحلتك للعمرة
+              اكتشف رحلات الحج
               <br />
-              أسهل وأسرع
+              والعمرة الاستثنائية
             </h1>
             <p>
-              اختر برنامج عمرة معد مسبقا أو قم بتخصيص
+              استمتع بتجربة فريدة ومميزة في رحلات الحج والعمرة الاستثنائية معنا.
               <br />
-              برنامج خاص بك وبعائلتك
+              اختر البرنامج المناسب لك ولا تفوت فرصة السفر والعبادة.
             </p>
-            <a class="btn btn-accent" href="#">إستكشف برامجنا</a>
+            <a class="btn btn-accent" href="#offers-section">استكشف البرامج</a>
           </section>
         </div>
-        <!-- end hero section -->
+        <!-- End hero section -->
         <!-- 2.2: start offers search section -->
         <div class="row mt-r-50">
           <div class="col-xs-1"></div>
           <section class="col-xs-10 search-box bg-white">
+            <!-- Start search form -->
             <form id="offersSearchForm" action="offers.html" method="get">
               <div class="row">
                 <div class="col-xs-9 col-sm-11">
@@ -140,14 +141,25 @@
                 </div>
               </div>
             </form>
+            <!-- End search form -->
           </section>
           <div class="col-xs-1"></div>
         </div>
         <!-- end offers search section -->
 
+        <!-- 2.3: start scroll to top button -->
+        <a
+          href="#top"
+          id="scrollToTopButton"
+          class="scroll-to-top-btn"
+          aria-label="Scroll to top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </a>
+
         <!-- 2.4: start offers section -->
         <div class="row">
-          <section class="offers">
+          <section id="offers-section" class="offers">
             <div class="col-xs-12">
               <h2>عروضنا الخاصة بالحج</h2>
             </div>
@@ -155,7 +167,9 @@
               <div class="row">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10">
-                  <div class="row" id="offers-container"></div>
+                  <div class="row" id="offers-container">
+                    <!-- Offers will be inserted here by JavaScript -->
+                  </div>
                 </div>
                 <div class="col-xs-1"></div>
               </div>
