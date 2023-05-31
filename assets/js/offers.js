@@ -62,8 +62,7 @@ const generateRandomOffer = () => {
   let feature = features[getRandomIndex(features)];
   let timeline = timelines[getRandomIndex(timelines)];
   let fromDate = timeline.from; // Use the "from" property as the fromDate
-
-  return {
+  const data = {
     title: titleObj.text,
     type: titleObj.type,
     nationality,
@@ -72,8 +71,14 @@ const generateRandomOffer = () => {
     features: feature,
     timeline,
     fromDate,
-    detailsLink: "#",
   };
+
+  const detailsLink = `offer.html?data=${encodeURIComponent(
+    JSON.stringify(data)
+  )}`;
+  data["detailsLink"] = detailsLink;
+  console.log(data);
+  return data;
 };
 
 // Generate an array of random offers
