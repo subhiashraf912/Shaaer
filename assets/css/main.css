@@ -207,6 +207,10 @@ header .logo img {
 
 header .logo .slogan {
   float: right;
+  background-color: #0a1d41;
+  padding: 0px 10px 3px 20px;
+  border-radius: 15px;
+  box-shadow: 1px 60px 21px -58px rgba(145, 145, 145, 0.65);
   margin-right: 8px;
   vertical-align: center;
 }
@@ -227,7 +231,7 @@ header nav {
   width: 100%;
   text-align: center; /* to center the ul element inside the nav */
   background-color: #0a1d41;
-  border-radius: 50px;
+  border-radius: 15px;
   box-shadow: 1px 60px 21px -58px rgba(145, 145, 145, 0.65);
 }
 
