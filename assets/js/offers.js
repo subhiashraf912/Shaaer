@@ -227,6 +227,23 @@ document
 
 // Smooth scroll to target section
 document.addEventListener("DOMContentLoaded", function () {
+  //check if there are offers in the url
+  const urlString = location.href;
+  const url = new URL(urlString);
+  const encodedData = url.searchParams.get("data");
+  if (encodedData) {
+    const data = JSON.parse(decodeURIComponent(encodedData));
+    console.log("There are offers in the url");
+    console.log(data);
+    const filteredOffers = filterOffers(
+      data.price,
+      data.category,
+      data.from,
+      data.nationality
+    );
+    displayFilteredOffers(filteredOffers);
+  }
+
   // scroll to offers section on button click
   const button = document.querySelector(".btn-accent");
   const targetSection = document.querySelector("#offers-section");

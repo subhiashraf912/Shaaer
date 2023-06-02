@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <title>العروض الخاصة بالتأشيرات | شعائر لخدمات الحج والعمرة</title>
+    <title>العروض الخاصة بالحج | شعائر لخدمات الحج والعمرة</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -14,6 +14,7 @@
     />
     <meta name="keywords" content="حج, عمرة, رحلات, سياحة, دينية, عروض, فيزا" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/visa-services.css" />
   </head>
   <body>
     <div class="container">
@@ -38,6 +39,7 @@
                 تسجيل الدخول
               </button>
             </div>
+
             <!-- mobile nav toggle icon-->
             <div id="hamburger-icon" class="hamburger-menu">
               <div></div>
@@ -45,6 +47,7 @@
               <div></div>
             </div>
           </div>
+
           <div id="mobile-nav" class="mobile-nav-menu">
             <ul id="mobile-nav-menu">
               <!-- Menu items will be inserted here by JavaScript -->
@@ -58,114 +61,189 @@
         <!-- Start hero section -->
         <div class="row">
           <section class="col-xs-12 hero">
-            <h1 class="title">
-              اكتشف خدمات التأشيرات <br />
-              الاستثنائية
-            </h1>
-            <p>
-              استمتع بتجربة فريدة ومميزة في خدمات التأشيرات معنا. <br />
-              اختر البرنامج المناسب لك ولا تفوت فرصة السفر والعبادة.
-            </p>
-            <a class="btn btn-accent" href="#offers-section">استكشف البرامج</a>
+            <div class="content">
+              <h1 class="title">
+                خدمات التأشيرات
+                <br />
+                والعمرة الاستثنائية
+              </h1>
+              <p>
+                استمتع بتجربة فريدة ومميزة في رحلات الحج والعمرة الاستثنائية
+                معنا.
+                <br />
+                اختر البرنامج المناسب لك ولا تفوت فرصة السفر والعبادة.
+              </p>
+              <a class="btn btn-accent" href="#visa-section">
+                استكشف الأنواع
+              </a>
+            </div>
           </section>
         </div>
         <!-- End hero section -->
-        <!-- 2.2: start offers search section -->
-        <div class="row mt-r-50">
-          <div class="col-xs-1"></div>
-          <section class="col-xs-10 search-box bg-white">
-            <!-- Start search form -->
-            <form id="offersSearchForm" action="offers.html" method="get">
+        <!-- empty row for some reason this fixes the navbar idk why-->
+        <div class="row mt-r-50"></div>
+        <!-- Visa types section -->
+        <div class="row">
+          <section id="visa-section" class="services">
+            <div class="col-xs-12">
+              <h2>أنواع التأشيرات</h2>
+            </div>
+            <div class="col-xs-12">
               <div class="row">
-                <div class="col-xs-9 col-sm-11">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                      <div class="search-input-container">
-                        <label
-                          ><i class="fa-regular fa-dollar-sign"></i> السعر
-                        </label>
-                        <select name="price to User " class="search-input">
-                          "priceRange">
-                          <option value="">اختر النطاق</option>
-                          <option value="0-2000">0 - 2000</option>
-                          <option value="2001-4000">2001 - 4000</option>
-                          <option value="4001-6000">4001 - 6000</option>
-                          <option value="6001-8000">6001 - 8000</option>
-                          <option value="8001-10000">8001 - 10000</option>
-                        </select>
-                      </div>
+                <div class="visa-wrapper">
+                  <div class="col-xs-1"></div>
+                  <div class="col-xs-10">
+                    <div class="row" id="services-container">
+                      <!-- Visa types will be inserted here by JavaScript -->
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                      <div class="search-input-container">
-                        <label
-                          ><i class="fa-regular fa-calendar-alt"></i> الفترة
-                        </label>
-                        <select name="periodRange">
-                          <option value="">اختر الفترة</option>
-                          <option value="1-7">1 - 7 أيام</option>
-                          <option value="8-14">8 - 14 أيام</option>
-                          <option value="15-21">15 - 21 أيام</option>
-                          <option value="22-28">22 - 28 أيام</option>
-                          <option value="29">29+ أيام</option>
-                        </select>
-                      </div>
+                  </div>
+                  <div class="col-xs-1"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end visa types section -->
+      </main>
+
+      <!-- end main section -->
+      <!-- 3: start footer -->
+      <div class="row">
+        <footer>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10">
+            <div class="row">
+              <div class="footer-header">
+                <div class="logo-reverse">
+                  <img src="./assets/images/logo/kaaba.png" />
+                  <div class="slogan">
+                    <p>شعــائر</p>
+                    <p>للحج والعمرة</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row footer-content">
+              <div class="col-md-5">
+                <div class="newsletter">
+                  <h2>الاشتراك في النشرة البريدية</h2>
+                  <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من منصة قالب جاهز ، حيث يمكنك أنا عدد الحروف
+                    التى تخطر في بالك.
+                  </p>
+                  <form action="subscribe.php" method="post">
+                    <input type="email" name="email" />
+                    <input
+                      class="btn btn-accent"
+                      type="submit"
+                      value="اشتراك"
+                    />
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="links-item">
+                      <p>روابط سريعة</p>
+                      <ul>
+                        <li>
+                          <a href="#">الحج والعمرة</a>
+                        </li>
+                        <li>
+                          <a href="#">التسهيلات</a>
+                        </li>
+                        <li>
+                          <a href="#">الرحلات الدينية</a>
+                        </li>
+                        <li>
+                          <a href="#">مقتطفات</a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                      <div class="search-input-container">
-                        <label
-                          ><i class="fa-regular fa-bed"></i> نوع الغرفة
-                        </label>
-                        <select name="roomType">
-                          <option value="">اختر نوع الغرفة</option>
-                          <option value="single">غرفة مفردة</option>
-                          <option value="double">غرفة مزدوجة</option>
-                          <option value="triple">غرفة ثلاثية</option>
-                          <option value="quad">غرفة رباعية</option>
-                        </select>
-                      </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="links-item">
+                      <p>العروض</p>
+                      <ul>
+                        <li>
+                          <a href="#"> برامج الحج</a>
+                        </li>
+                        <li>
+                          <a href="#">برامج العمرة</a>
+                        </li>
+                        <li>
+                          <a href="#">حجوزات الطريان</a>
+                        </li>
+                        <li>
+                          <a href="#">ادارة الحجيج</a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                      <div class="search-input-container">
-                        <label
-                          ><i class="fa-regular fa-map-marked-alt"></i> الدولة
-                        </label>
-                        <select name="country">
-                          <option value="">اختر الدولة</option>
-                          <!-- Add your countries here -->
-                        </select>
-                      </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="links-item">
+                      <p>الشركة</p>
+                      <ul>
+                        <li>
+                          <a href="#">من نحن</a>
+                        </li>
+                        <li>
+                          <a href="#">طاقمنا</a>
+                        </li>
+                        <li>
+                          <a href="#">تواصل معنا</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="links-item">
+                      <p>مكاتبنا</p>
+                      <ul>
+                        <li>
+                          <a href="#">مكة المكرمة</a>
+                        </li>
+                        <li>
+                          <a href="#">المدينة المنورة</a>
+                        </li>
+                        <li>
+                          <a href="#">القاهرة</a>
+                        </li>
+                        <li>
+                          <a href="#">لندن</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-3 col-sm-1">
-                  <button type="submit" class="btn btn-primary w-100">
-                    بحث
-                  </button>
-                </div>
               </div>
-            </form>
-            <!-- End search form -->
-          </section>
+            </div>
+            <div class="row footer-social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="col-xs-1"></div>
-        </div>
-        <!-- end offers search section -->
-        <!-- 2.3: start offers section -->
-        <div class="row mt-50">
-          <section class="col-xs-12 offers" id="offers-section">
-            <h2 class="section-title">برامجنا</h2>
-            <!-- Add your offers here -->
-          </section>
-        </div>
-        <!-- end offers section -->
-      </main>
-      <!-- end main section -->
-      <!-- 3: start website footer-->
-      <footer>
-        <!-- Add your footer content here -->
-      </footer>
-      <!-- end website footer -->
+        </footer>
+      </div>
+      <!-- end footer -->
     </div>
-    <!-- end container -->
-    <!-- Add your scripts here -->
   </body>
+  <script src="assets/js/nav/navigation.js"></script>
+  <script src="assets/js/nav/mobileHamburgerHandler.js"></script>
+  <script src="./assets/js/visaServices.js"></script>
 </html>
