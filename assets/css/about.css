@@ -135,7 +135,8 @@ form input[type="submit"]:hover {
   transition: color 0.2s;
 }
 
-.card:hover .card-title {
+.card:hover .card-title,
+.card:hover .values-title {
   color: #007bff;
 }
 
@@ -171,6 +172,58 @@ form input[type="submit"]:hover {
   transition: transform 0.5s;
 }
 /* End of card styles */
+
+/* Values Section */
+
+section.values {
+  margin-top: 50px;
+}
+
+section.values article {
+  padding-right: 60px;
+  padding-left: 20px;
+}
+
+section.values article h2 {
+  font-size: 2em;
+  width: 80%;
+}
+
+section.values ol {
+  margin-bottom: 55px;
+}
+
+section.values ol li {
+  font-size: 1.2em;
+  line-height: 2.8em;
+  list-style: none;
+}
+
+section.values ol li span.list-icon {
+  font-size: 1em;
+  margin-left: 8px;
+  background-color: rgba(194, 232, 83, 0.5);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+section.values .values-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  border-radius: 8px;
+  transition: transform 0.5s;
+}
+.values-text {
+  transition: 0.2s;
+}
+.values-text:hover {
+  transition: 0.2s;
+  color: #003369;
+  transform: translateY(-5px);
+}
 
 /* Start of responsive styles */
 @media (max-width: 768px) {
