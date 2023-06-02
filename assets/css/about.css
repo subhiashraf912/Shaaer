@@ -1,0 +1,204 @@
+/* Start of main container styles */
+main {
+  min-height: 500px;
+  overflow: auto;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* End of main container styles */
+
+/* Start of team card styles */
+.team-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  flex-basis: 22%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-card h3:hover,
+.team-card p:hover {
+  color: #007bff;
+  transition: color 0.2s;
+  transform: translateY(-5px);
+}
+/* End of team card styles */
+
+/* Start of form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: var(--dark-blue);
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--light-blue);
+  transition: background-color 0.2s;
+}
+/* End of form styles */
+
+/* Start of about section styles */
+.about-section {
+  display: flex; /* Added to align image and text side by side */
+}
+
+.about-section h2 {
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
+
+.about-section ul li:hover {
+  color: #007bff;
+  transition: color 0.2s;
+}
+/* End of about section styles */
+
+/* Start of card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.2s;
+  width: 80%;
+}
+
+.card:hover {
+  transition: 0.2s;
+  transform: translateY(-10px);
+}
+
+.card .about-section {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.card:hover .card-title {
+  color: #007bff;
+}
+
+.card-text {
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+
+.card:hover .card-text {
+  color: #003369;
+}
+
+.card-image-wrapper {
+  flex: 1; /* Adjusted to ensure proper sizing */
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.card-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.5s;
+}
+/* End of card styles */
+
+/* Start of responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .team-card {
+    flex-basis: 100%; /* each card will take up the full width */
+  }
+
+  .about-section {
+    flex-direction: column; /* In small screens, stack image and text vertically */
+  }
+
+  .card {
+    flex-direction: column; /* In small screens, stack image and text vertically */
+  }
+  .card-image-wrapper {
+    height: auto;
+  }
+  .card-image-wrapper,
+  .card-content {
+    flex: auto;
+    height: auto;
+  }
+  .card-content {
+    padding-left: 0; /* Remove left padding in small screens */
+  }
+}
+/* End of responsive styles */

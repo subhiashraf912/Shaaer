@@ -84,6 +84,7 @@ html {
 
 body {
   background-color: var(--light-blue);
+  /* padding-top: 5px; */
   color: var(--dark);
   margin: 0;
   font-size: 14px;

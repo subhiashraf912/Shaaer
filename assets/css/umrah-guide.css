@@ -1,0 +1,89 @@
+main .hero {
+  min-height: 200px;
+  background-color: var(--dark-blue);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../assets/images/umrah-guide-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  padding-top: 100px;
+}
+/* main {
+  min-height: 500px;
+  overflow: auto;
+  padding-top: 200px;
+} */
+
+.avatar-guide {
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-guide:hover {
+  transition: 0.2s;
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.guide-text {
+  transition: 0.2s;
+}
+.guide-text:hover {
+  transition: 0.2s;
+  color: #003369;
+  transform: translateY(-5px);
+}
+/* Mobile-first styles */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transition: 0.2s;
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover .card-title {
+  color: #007bff;
+}
+.card:hover .card-content {
+  color: #003369;
+}
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 1rem;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

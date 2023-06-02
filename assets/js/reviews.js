@@ -1,6 +1,6 @@
 const reviews = [
   {
-    image: "assets/images/feedbacks/feedback_1.png",
+    image: "assets/images/people/person_1.png",
     name: "خالد علي",
     country: "فلسطين",
 
@@ -11,7 +11,7 @@ const reviews = [
            بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_1.png",
+    image: "assets/images/people/person_1.png",
     name: "محمد أحمد",
     country: "مصر",
 
@@ -22,7 +22,7 @@ const reviews = [
            بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_2.png",
+    image: "assets/images/people/person_2.png",
     name: "محمود جودة",
     country: "فلسطين",
 
@@ -33,7 +33,7 @@ const reviews = [
           بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_3.jpg",
+    image: "assets/images/people/person_3.jpg",
     name: "سعد الدين",
     country: "اليمن",
     text: `هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -43,7 +43,7 @@ const reviews = [
            بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_4.jpg",
+    image: "assets/images/people/person_4.jpg",
     name: "سمير محمد",
     country: "مصر",
     text: `هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -53,7 +53,7 @@ const reviews = [
           بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_1.png",
+    image: "assets/images/people/person_1.png",
     name: "محمد أحمد",
     country: "مصر",
     text: `هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
@@ -63,7 +63,7 @@ const reviews = [
            بالك.`,
   },
   {
-    image: "assets/images/feedbacks/feedback_1.png",
+    image: "assets/images/people/person_1.png",
     name: "سالم علي",
     country: "الجزائر",
     text: `هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
